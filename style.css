@@ -1,0 +1,95 @@
+
+*{
+    box-sizing:border-box; /*always wise to use*/
+
+}
+
+body{
+    margin:10em;   /*to center input body iin the mid*/
+    background-color:lightpink; /*bg color*/
+}
+
+h1{                     /*top heading of page*/
+    text-align:center;
+    font-family:Pristina;
+    font-size:2em;
+    letter-spacing:3px;
+}
+
+
+
+.todo-input {
+    border:0px;   /*width of the input box*/
+    padding:10px 20px;    /* its the space around text in input box*/
+    margin:4px;
+}
+
+
+input[type=text]{
+   font-size:2em;        /*customise input style*/
+   font-weight:bold;
+}
+
+.add , .del_btn, .complete_btn{     
+    /*styling buttons*/
+    
+    margin:4px;
+    border:2px solid black;
+    cursor:pointer;
+    text-align:center;
+    padding:8px 16px;
+
+} 
+
+
+
+
+.upper-body {                /*use flexbox to position input box and add icon aptly*/
+  
+    display: flex;         
+    flex-direction: row;    /*arrangement order of child*/
+   justify-content: center;  /*alignment of child along main axis----for row it is hori*/
+   align-items:center;    /*alignment of  child along cross axis axis---for row it is vertical*/
+}
+
+
+
+.item_container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+}
+
+
+
+
+.message{
+    background-color:floralwhite;
+    list-style-type:none;
+    padding:5px 10px;
+    width:20em;
+    height:2em;
+  
+}
+
+.add:hover{
+    background-color:lightblue;
+    font-weight:bold;
+     
+}
+
+
+.complete{
+    opacity:0.5;
+    text-decoration:line-through;
+}
+
+.choose{
+    padding:5px 10px;
+    font-size:16px;
+}
+
+
+
